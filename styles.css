@@ -248,7 +248,7 @@ a {
     margin: auto;
   }
   .hero-background {
-    background-image: url(images/hero_background_mobile.png);
+    background-image: url(images/hero_background_mobile_2.png);
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -258,7 +258,7 @@ a {
   .hero-title {
     font-variant: small-caps;
     letter-spacing: 2px;
-    line-height: 67px;
-    font-size: 4rem;
+    line-height: 45px;
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=styles.css.map */
