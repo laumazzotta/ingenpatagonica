@@ -249,7 +249,7 @@ a {
   }
   .hero-background {
     background-image: url(images/hero_background_mobile_3.png);
-    height: 70vh;
+    height: 100vh;
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
