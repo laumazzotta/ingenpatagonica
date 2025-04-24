@@ -248,17 +248,17 @@ a {
     margin: auto;
   }
   .hero-background {
-    background-image: url(images/hero_background_mobile_2.png);
-    height: 100vh;
+    background-image: url(images/hero_background_mobile_3.png);
+    height: 70vh;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
   }
   .hero-title {
     font-variant: small-caps;
     letter-spacing: 2px;
-    line-height: 45px;
-    font-size: 3rem;
+    line-height: 30px;
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=styles.css.map */
