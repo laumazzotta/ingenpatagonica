@@ -169,6 +169,28 @@ a {
   color: #06C7F2;
 }
 
+.hero {
+  position: absolute;
+  top: 15%;
+  padding: 0 5rem;
+}
+
+.hero-background {
+  background-image: url(images/hero_background_small.png);
+  height: 120vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-title {
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  line-height: 67px;
+  font-size: 4.5rem;
+}
+
 @media screen and (max-width: 767.99px) {
   .w-xs-90 {
     width: 90% !important;
@@ -215,5 +237,28 @@ a {
   }
   .datos-footer-overlay > div > img {
     width: 20;
+  }
+  .hero {
+    position: absolute;
+    top: 15%;
+    padding: 0;
+  }
+  .hero > img {
+    display: block;
+    margin: auto;
+  }
+  .hero-background {
+    background-image: url(images/hero_background_mobile.png);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero-title {
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    line-height: 67px;
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=styles.css.map */

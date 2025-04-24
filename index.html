@@ -35,7 +35,8 @@
 
 <body class="container-fluid p-0 m-0">
   <!-- HEADER -->
-    <header id="header" class="vh-100 hero-background">
+    <header id="header" class="hero-background">
+        <!-- NAVBAR -->
         <nav class="navbar w-100 m-0 p-4 position-fixed">
             <div id="myNav" class="overlay d-flex flex-column justify-content-around">
                 <a href="javascript:void(0)" class="align-self-end pt-4 pe-4" id="closeNav"><img src="images/close_btn.svg" alt="closebtn" width="30"></a>
@@ -52,9 +53,9 @@
                 </div>
                 <div class="line-footer-overlay w-100"></div>
                 <div class="datos-footer-overlay text-noto fs-6 m-0 w-100 d-flex flex-column flex-md-row column-gap-4 align-items-center justify-content-center">
-                    <div class="d-flex flex-row column-gap-2 align-items-center text-decoration-none">
+                    <div class="d-flex flex-row column-gap-2 align-items-center">
                         <img src="images/phone.svg" alt="phone">
-                        <p class="text-noto fs-6 m-0">+54 9 294 469 3734</p>
+                        <p class="text-noto text-decoration-none fs-6 m-0">+54 9 294 469 3734</p>
                     </div>
                     <div class="d-flex flex-row column-gap-2 ">
                         <img src="images/email.svg" alt="phone">
@@ -67,7 +68,7 @@
                 <div class="datos-contacto-navbar d-none d-md-flex flex-row column-gap-4 align-items-center">
                     <div class="d-flex flex-row column-gap-2 align-items-center text-decoration-none">
                         <img src="images/phone.svg" alt="phone" width="30">
-                        <p class="text-noto fs-6 m-0">+54 9 294 469 3734</p>
+                        <p class="text-noto text-decoration-none fs-6 m-0">+54 9 294 469 3734</p>
                     </div>
                     <div class="d-flex flex-row column-gap-2 ">
                         <img src="images/email.svg" alt="phone" width="30">
@@ -79,7 +80,15 @@
                 </a>
             </div>
         </nav>
-        
+        <!-- HERO -->
+        <section class="hero text-center text-md-start d-grid row-gap-5">
+            <img src="images/Logo_hero.png" alt="logo" width="300">
+            <h1 class="text-noto white hero-title mb-0 px-0 px-md-5">Soluciones integrales de mantenimiento y obra</h1>
+            <div class="d-flex flex-row justify-content-center justify-content-md-start align-items-center px-0 px-md-5 column-gap-2">
+                <img class="location-icon" src="images/location_icon.svg" alt="location" width="30">
+                <p class="text-noto white m-0 p-0">Bariloche, Argentina.</p>
+            </div>
+       </section>
     </header>
     <!-- MAIN -->
     <main class="w-100 vh-100">
