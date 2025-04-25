@@ -6,6 +6,10 @@
   font-family: "Noto Sans", serif;
 }
 
+.border-gradient {
+  border-color: linear-gradient(131deg, #06C7F2 0%, #023D75 100%) !important !important;
+}
+
 .gradient-primary {
   background: #06C7F2;
   background: linear-gradient(131deg, #06C7F2 0%, #023D75 100%);
@@ -34,6 +38,10 @@
 
 .color-cuart {
   color: #011640;
+}
+
+.background-black {
+  background-color: #000000;
 }
 
 .vh-50 {
@@ -177,11 +185,12 @@ a {
 
 .hero-background {
   background-image: url(images/hero_background_small.png);
-  height: 120vh;
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #000000;
 }
 
 .hero-title {
@@ -189,6 +198,84 @@ a {
   letter-spacing: 2px;
   line-height: 67px;
   font-size: 4.5rem;
+}
+
+.main-logo-letters {
+  animation: logo-letters 2s ease-in 0s forwards;
+}
+
+.main-logo {
+  animation: logo-fill 5s ease-in-out 0.5s forwards;
+}
+
+.main-logo-iso {
+  animation: logo-stroke-iso 3s ease-in 0.2s forwards;
+  stroke-dasharray: 500px;
+}
+
+@keyframes logo-fill {
+  0% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 100%;
+  }
+}
+@keyframes logo-stroke-iso {
+  to {
+    stroke-dasharray: 1343px;
+  }
+}
+@keyframes logo-letters {
+  0% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 100%;
+  }
+}
+.about-title {
+  color: #06C7F2;
+}
+
+.about-container-1 {
+  padding: 7rem 5rem;
+  border-right: 10px solid;
+  -o-border-image: linear-gradient(to bottom, #011640, #06C7F2) 1 100%;
+     border-image: linear-gradient(to bottom, #011640, #06C7F2) 1 100%;
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-image-source: linear-gradient(120deg, #011640, #06C7F2);
+}
+
+.btn-primary {
+  color: white;
+  background: black;
+  transition: all 0.5s;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.btn-primary:hover {
+  color: white;
+  background: linear-gradient(120deg, #011640, #06C7F2) !important;
+  transition: all 0.5s;
+}
+
+.btn-primary:active {
+  color: white;
+  background-color: #011640;
+  border-color: #06C7F2;
+}
+
+.btn-primary:focus {
+  color: white;
+  background-color: #011640;
+  border-color: #06C7F2;
 }
 
 @media screen and (max-width: 767.99px) {
@@ -260,5 +347,12 @@ a {
     letter-spacing: 2px;
     line-height: 30px;
     font-size: 2rem;
+  }
+  .about-container-1 {
+    padding: 7rem 3rem;
+    -o-border-image: none;
+       border-image: none;
+    border-right: none;
+    border-width: 0;
   }
 }/*# sourceMappingURL=styles.css.map */

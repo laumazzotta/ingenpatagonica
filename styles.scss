@@ -20,6 +20,12 @@ $paleta2: #0468BF;
 $paleta3: #011640;
 $paleta4: #0339A6;
 
+$border-color: linear-gradient(131deg, #06C7F2 0%, #023D75 100%) !important;
+
+.border-gradient {
+   border-color: $border-color !important;
+}
+
 .gradient-primary {
     background: #06C7F2;
     background: linear-gradient(131deg, #06C7F2 0%, #023D75 100%);
@@ -48,6 +54,10 @@ $paleta4: #0339A6;
 
 .color-cuart {
     color: $paleta3;
+}
+
+.background-black {
+  background-color: #000000;
 }
 
 .vh-50 {
@@ -193,11 +203,12 @@ a {
 
 .hero-background {
   background-image: url(images/hero_background_small.png);
-  height: 120vh;
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #000000;
 }
 
 .hero-title {
@@ -207,9 +218,96 @@ a {
   font-size: 4.5rem;
 }
 
-// .location-icon {
-//   width: 50px;
-// }
+
+.main-logo-letters {
+  animation: logo-letters 2s ease-in 0s forwards;
+    }
+
+.main-logo {
+  animation: logo-fill 5s ease-in-out .5s forwards;
+}
+
+.main-logo-iso {
+  animation: logo-stroke-iso 3s ease-in .2s forwards;
+  stroke-dasharray: 500px;
+}
+
+@keyframes logo-fill {
+  0% {
+    fill-opacity: 0;
+  }
+
+  100% {
+    fill-opacity: 100%;
+  }
+}
+
+@keyframes logo-stroke-iso {
+  to {
+    stroke-dasharray: 1343px;
+  }
+}
+
+@keyframes logo-letters {
+  0% {
+    fill-opacity: 0;
+  }
+
+  100% {
+    fill-opacity: 100%;
+  }
+}
+
+.about-title {
+  color: $primary;
+}
+
+.about-container-1 {
+  padding: 7rem 5rem;
+  border-right: 10px solid;
+  // border-width: 10px !important;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      $paleta3,
+      $primary 
+      ) 1 100%;
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-image-source: 
+    linear-gradient(120deg, $paleta3, $primary, );
+}
+
+.btn-primary {
+  color: white;
+  background: black;
+  transition: all .5s;
+  font-size: 1.5rem;
+  padding: 1rem ;
+  
+}
+.btn-primary:hover{
+  color: white;
+  // background: #0339A6;
+  background: linear-gradient(120deg, $paleta3, $primary) !important;
+  transition: all .5s;
+
+}
+.btn-primary:active{
+  color: white;
+  background-color: $paleta3;
+  border-color: $primary;
+}
+.btn-primary:focus{
+  color: white;
+  background-color: $paleta3;
+  border-color: $primary;
+}
+
 
 //************ TABLET
 
@@ -307,6 +405,15 @@ a {
       line-height: 30px;
       font-size: 2rem;
     }
+
+    .about-container-1 {
+      padding: 7rem 3rem;
+      border-image: none;
+      border-right: none;
+      border-width: 0;
+    }
+
+    
 
 }
 
