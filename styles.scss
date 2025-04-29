@@ -68,6 +68,10 @@ $border-color: linear-gradient(131deg, #06C7F2 0%, #023D75 100%) !important;
   background-color: #000000;
 }
 
+.gray {
+  background-color: #DCDCDC;
+}
+
 .vh-50 {
     height: 50vh;
 }
@@ -98,24 +102,30 @@ a {
 .btn-primary {
     font-family: $font-family-primary;
     color: white;
-    background-color: linear-gradient(131deg, #06C7F2 0%, #023D75 100%);
+    background-image: linear-gradient(131deg, #06C7F2 0%, #023D75 100%);
     transition: all .5s;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+    border-radius: 0;
+    box-shadow: none;
     
 }
 .btn-primary:hover{
     color: white;
-    background-color: linear-gradient(#000000 0%, #023D75 100%);
+    transition: all .5s;
+    box-shadow: inset 0rem 0rem 1.2rem 5px rgba(0, 0, 0, 0.25) !important;
     
 }
 .btn-primary:active{
     color: white;
-    background-color: $primary;
-    border-color: $primary;
+    background-image: none;
+    background-color: $paleta3;
+    
 }
 .btn-primary:focus{
     color: white;
     background-color: $primary;
-    border-color: $primary;
 }
 
 #closeNav,
@@ -229,7 +239,7 @@ a {
 
 .main-logo-letters {
   clip-path: inset(0 100% 0 0);
-  animation: logo-letters 2s linear 2s forwards;
+  animation: logo-letters 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) 1s forwards;
     }
 
 @keyframes logo-letters {
@@ -277,32 +287,6 @@ a {
     linear-gradient(120deg, $paleta3, $primary, );
 }
 
-.btn-primary {
-  color: white;
-  background: black;
-  transition: all .5s;
-  font-size: 1.5rem;
-  padding: 1rem ;
-  
-}
-.btn-primary:hover{
-  color: white;
-  // background: #0339A6;
-  background: linear-gradient(120deg, $paleta3, $primary) !important;
-  transition: all .5s;
-
-}
-.btn-primary:active{
-  color: white;
-  background-color: $paleta3;
-  border-color: $primary;
-}
-.btn-primary:focus{
-  color: white;
-  background-color: $paleta3;
-  border-color: $primary;
-}
-
 
 #mision-vision {
   margin-top: 5rem;
@@ -319,6 +303,20 @@ a {
   display: inline-block;
   color: transparent;
   letter-spacing: 2px;
+}
+
+.cards-servicios {
+  justify-items: center;
+}
+
+.card {
+  border-radius: 10px !important;
+  transition: all .5s;
+}
+
+.card:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2)!important;
+  transition: all .5s;
 }
 
 //************ TABLET
