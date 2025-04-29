@@ -14,7 +14,7 @@ $font-family-secondary: 'Noto Sans', serif;
 
 h2  {
   font-family: $font-family-primary;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
@@ -30,9 +30,9 @@ $paleta4: #0339A6;
 
 $border-color: linear-gradient(131deg, #06C7F2 0%, #023D75 100%) !important;
 
-.border-gradient {
-   border-color: $border-color !important;
-}
+// .border-gradient {
+//    border-color: $border-color !important;
+// }
 
 .gradient-primary {
     background: #06C7F2;
@@ -253,9 +253,6 @@ a {
     }
   }
 
-  
-
-
 .about-title {
   color: $primary;
 }
@@ -275,7 +272,7 @@ a {
 .border-gradient {
   border: 10px solid;
   border-image-slice: 1;
-  border-width: 4px;
+  // border-width: 4px;
   border-image-source: 
     linear-gradient(120deg, $paleta3, $primary, );
 }
@@ -306,6 +303,23 @@ a {
   border-color: $primary;
 }
 
+
+#mision-vision {
+  margin-top: 5rem;
+}
+
+.imagen-mision-vision {
+  margin-top: -6rem;
+  box-shadow: 0 -0.5rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.titulos-mision-vision {
+  background-image: linear-gradient(90deg, #06C7F2 0%, #023D75 100%);
+  background-clip: text;
+  display: inline-block;
+  color: transparent;
+  letter-spacing: 2px;
+}
 
 //************ TABLET
 
