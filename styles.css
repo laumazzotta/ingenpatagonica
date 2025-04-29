@@ -6,6 +6,14 @@
   font-family: "Noto Sans", serif;
 }
 
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .border-gradient {
   border-color: linear-gradient(131deg, #06C7F2 0%, #023D75 100%) !important !important;
 }
@@ -184,7 +192,7 @@ a {
 }
 
 .hero-background {
-  background-image: url(images/hero_background_small.png);
+  background-image: url(images/hero_background.png);
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -201,36 +209,28 @@ a {
 }
 
 .main-logo-letters {
-  animation: logo-letters 2s ease-in 0s forwards;
+  -webkit-clip-path: inset(0 100% 0 0);
+          clip-path: inset(0 100% 0 0);
+  animation: logo-letters 2s linear 2s forwards;
 }
 
-.main-logo {
-  animation: logo-fill 5s ease-in-out 0.5s forwards;
+@keyframes logo-letters {
+  to {
+    -webkit-clip-path: inset(0 0% 0 0);
+            clip-path: inset(0 0% 0 0);
+  }
 }
-
 .main-logo-iso {
-  animation: logo-stroke-iso 3s ease-in 0.2s forwards;
-  stroke-dasharray: 500px;
+  fill-opacity: 0%;
+  stroke: url(#paint1_linear_111_274);
+  stroke-width: 1.5;
+  stroke-dasharray: 625;
+  animation: drawIso 2s ease-in-out forwards;
 }
 
-@keyframes logo-fill {
-  0% {
-    fill-opacity: 0;
-  }
-  100% {
-    fill-opacity: 100%;
-  }
-}
-@keyframes logo-stroke-iso {
+@keyframes drawIso {
   to {
     stroke-dasharray: 1343px;
-  }
-}
-@keyframes logo-letters {
-  0% {
-    fill-opacity: 0;
-  }
-  100% {
     fill-opacity: 100%;
   }
 }

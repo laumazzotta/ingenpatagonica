@@ -32,3 +32,15 @@ $('#closeNav').on('click', function() {
 $('.nav-link').on('click', function() {
     $('#myNav').css("height", "0%");
 });
+
+
+gsap.registerPlugin(ScrollTrigger) 
+
+// gsap.to('.box', {
+//     scrollTrigger: '.box', // start animation when ".box" enters the viewport
+//     rotation: 360,
+//     duration: 3
+
+// });
+
+
