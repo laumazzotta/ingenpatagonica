@@ -305,7 +305,7 @@ a {
   letter-spacing: 2px;
 }
 
-#servicios, #trabajos {
+#servicios, #trabajos, #novedades {
   padding: 5rem 3rem;
 }
 
@@ -451,7 +451,7 @@ a {
     -moz-column-count: 2;
          column-count: 2;
   }
-  #servicios, #trabajos {
+  #servicios, #trabajos, #novedades {
     padding: 5rem 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */

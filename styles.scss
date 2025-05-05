@@ -336,7 +336,7 @@ a {
   letter-spacing: 2px;
 }
 
-#servicios, #trabajos {
+#servicios, #trabajos, #novedades {
   padding: 5rem 3rem;
 }
 
@@ -391,6 +391,7 @@ a {
   object-fit: contain;
   transition: filter 0.3s;
 }
+
 
 // ******* END CARRUSEL CLIENTES
 
@@ -523,7 +524,7 @@ a {
       column-count: 2;
     }
 
-    #servicios, #trabajos {
+    #servicios, #trabajos, #novedades {
       padding: 5rem 1rem;
     }
 

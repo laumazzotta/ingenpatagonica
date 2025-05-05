@@ -43,3 +43,9 @@ gsap.registerPlugin(ScrollTrigger)
 
 // });
 
+var $plusButton = $('.plus-button'); 
+
+      $plusButton.click(function(){
+        $(this).removeClass('d-block');
+        $(this).addClass('d-none');
+    });
