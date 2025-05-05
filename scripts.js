@@ -43,4 +43,3 @@ gsap.registerPlugin(ScrollTrigger)
 
 // });
 
-

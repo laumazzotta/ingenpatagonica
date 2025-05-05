@@ -120,14 +120,31 @@
                 <p class="text-noto white m-0 p-0">Bariloche, Argentina.</p>
             </div>
        </section>
+       <section id="about" class="text-center d-none d-lg-block">
+        <div class="row justify-content-center m-0">
+            <div class="about-container-1 col-sm-8 ">
+                <h2 class="about-title text-noto text-uppercase fw-bold m-0 fs-2">Atención y calidad</h2>
+                <p class="text-noto fs-6 white px-5 pt-5 pb-3 m-0">
+                    Nuestra filosofía se centra en ofrecer soluciones de alta calidad en construcción, gestión y mantenimiento de infraestructuras. 
+                </p>
+                <p class="text-noto fs-6 white px-5 m-0">
+                    Nos dedicamos a resolver cada problema y atender cada requerimiento de nuestros clientes con soluciones innovadoras y efectivas.
+                </p>
+                <button class="box btn btn-primary fw-semibold mt-5 border-0 mx-auto"><a class="text-decoration-none white" href="#contacto">CONTACTANOS</a></button>
+            </div>
+            <div class="col-sm-4 p-0 overflow-hidden">
+            
+            </div>
+        </div>
+    </section>
     
     </header>
     <!-- MAIN -->
     <main class="w-100 vh-100">
         <!-- ABOUT SECTION -->
-        <section id="about" class="background-black text-center">
+        <section id="about" class="background-black text-center d-block d-lg-none">
             <div class="row justify-content-center m-0">
-                <div class="about-container-1 col-sm-8 ">
+                <div class="about-container-1 col-12 col-lg-8">
                     <h2 class="about-title text-noto text-uppercase fw-bold m-0 fs-2">Atención y calidad</h2>
                     <p class="text-noto fs-6 white px-5 pt-5 pb-3 m-0">
                         Nuestra filosofía se centra en ofrecer soluciones de alta calidad en construcción, gestión y mantenimiento de infraestructuras. 
@@ -135,9 +152,9 @@
                     <p class="text-noto fs-6 white px-5 m-0">
                         Nos dedicamos a resolver cada problema y atender cada requerimiento de nuestros clientes con soluciones innovadoras y efectivas.
                     </p>
-                    <a href="#contacto"><button class="box btn btn-primary fw-semibold mt-5 border-0">CONTACTANOS</button></a>
+                    <button class="box btn btn-primary fw-semibold mt-5 border-0 mx-auto"><a class="text-decoration-none white" href="#contacto">CONTACTANOS</a></button>
                 </div>
-                <div class="col-sm-4 p-0 overflow-hidden">
+                <div class="col-12 col-lg-8 p-0 overflow-hidden">
                     <img src="images/img_about_caldera 1.png" alt="calderas" class="h-100 ">
                 </div>
             </div>
@@ -209,9 +226,9 @@
         </section>
         
         <!-- SERVICIOS SECTION -->
-        <section id="servicios" class="py-5 gray w-100">
+        <section id="servicios" class="gray w-100">
             <h2 class="text-center text-uppercase">servicios</h2>
-            <p class="text-noto black text-center">Soluciones integrales de mantenimiento y obra.</p>
+            <p class="text-noto black text-center pb-0">Soluciones integrales de mantenimiento y obra.</p>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-5 mw-100 m-0 g-4">
                 <div class="col cards-servicios">
                     <div class="card h-100 w-100" style="width: 18rem;">
@@ -282,11 +299,161 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center mx-auto">
-                <a href="#contacto"><button class="box btn btn-primary fw-semibold mt-5 border-0 ">CONTACTANOS</button></a>
+            <div class="text-center mx-auto d-flex flex-column align-items-center">
+                <button class="box btn btn-primary fw-semibold mt-5 border-0 "><a class="text-decoration-none white" href="#contacto">CONTACTANOS</a></button>
             </div>
         </section>
-       
+
+       <!-- TRABAJOS SECTION -->
+        <section id="trabajos" class="trabajos-section w-100">
+            <h3 class="text-montserrat white fw-bold text-center text-uppercase mb-0">Nuestros trabajos</h3>
+            <div class="mx-auto p-5 grid-container">
+                
+                        <img class="rounded-3 grid-image w-100" src="images/trabajos/trabajos_01.png" alt="ingen" type="button" data-bs-toggle="modal" data-bs-target="#trabajos_01">
+                        <div class="modal fade" id="trabajos_01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-transparent">
+                                <img src="images/trabajos/trabajos_01.png" alt="ingen" class="position-relative rounded-3">
+                                <button type="button" class="btn-close align-self-end p-2 position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            </div>
+                        </div>
+
+                        <img class="rounded-3 grid-image w-100" src="images/trabajos/trabajos_02.png" alt="ingen" type="button" data-bs-toggle="modal" data-bs-target="#trabajos_02.png">
+                        <div class="modal fade" id="trabajos_02.png" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-transparent">
+                                <img src="images/trabajos/trabajos_02.png" alt="ingen" class="position-relative rounded-3">
+                                <button type="button" class="btn-close align-self-end p-2 position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            </div>
+                        </div>
+
+                        <img class="rounded-3 grid-image w-100" src="images/trabajos/trabajos_04.png" alt="ingen" type="button" data-bs-toggle="modal" data-bs-target="#trabajos_04.png">
+                        <div class="modal fade" id="trabajos_04.png" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-transparent">
+                                <img src="images/trabajos/trabajos_04.png" alt="ingen" class="position-relative rounded-3">
+                                <button type="button" class="btn-close align-self-end p-2 position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            </div>
+                        </div>
+                
+                        <img class="rounded-3 grid-image w-100" src="images/trabajos/trabajos_09.png" alt="ingen" type="button" data-bs-toggle="modal" data-bs-target="#trabajos_09.png">
+                        <div class="modal fade" id="trabajos_09.png" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-transparent">
+                                <img src="images/trabajos/trabajos_09.png" alt="ingen" class="position-relative rounded-3">
+                                <button type="button" class="btn-close align-self-end p-2 position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            </div>
+                        </div>
+
+                        <img class="rounded-3 grid-image w-100" src="images/trabajos/trabajos_05.png" alt="ingen" type="button" data-bs-toggle="modal" data-bs-target="#trabajos_05.png">
+                        <div class="modal fade" id="trabajos_05.png" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-transparent">
+                                <img src="images/trabajos/trabajos_05.png" alt="ingen" class="position-relative rounded-3">
+                                <button type="button" class="btn-close align-self-end p-2 position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            </div>
+                        </div>
+
+                        <img class="rounded-3 grid-image w-100" src="images/trabajos/trabajos_06.png" alt="ingen" type="button" data-bs-toggle="modal" data-bs-target="#trabajos_06.png">
+                        <div class="modal fade" id="trabajos_06.png" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-transparent">
+                                <img src="images/trabajos/trabajos_06.png" alt="ingen" class="position-relative rounded-3">
+                                <button type="button" class="btn-close align-self-end p-2 position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            </div>
+                        </div>
+
+                        <img class="rounded-3 grid-image w-100" src="images/trabajos/trabajos_10.png" alt="ingen" type="button" data-bs-toggle="modal" data-bs-target="#trabajos_10.png">
+                        <div class="modal fade" id="trabajos_10.png" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-transparent">
+                                <img src="images/trabajos/trabajos_10.jpg" alt="ingen" class="position-relative rounded-3">
+                                <button type="button" class="btn-close align-self-end p-2 position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            </div>
+                        </div>
+                
+                        <img class="rounded-3 grid-image w-100" src="images/trabajos/trabajos_08.png" alt="ingen" type="button" data-bs-toggle="modal" data-bs-target="#trabajos_08.png">
+                        <div class="modal fade" id="trabajos_08.png" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-transparent">
+                                <img src="images/trabajos/trabajos_08.png" alt="ingen" class="position-relative rounded-3">
+                                <button type="button" class="btn-close align-self-end p-2 position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            </div>
+                        </div>
+
+                        <img class="rounded-3 grid-image w-100" src="images/trabajos/trabajos_07.png" alt="ingen" type="button" data-bs-toggle="modal" data-bs-target="#trabajos_07.png">
+                        <div class="modal fade" id="trabajos_07.png" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-transparent">
+                                <img src="images/trabajos/trabajos_07.png" alt="ingen" class="position-relative rounded-3">
+                                <button type="button" class="btn-close align-self-end p-2 position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            </div>
+                        </div>
+
+                        <img class="rounded-3 grid-image w-100" src="images/trabajos/trabajos_03.png" alt="ingen" type="button" data-bs-toggle="modal" data-bs-target="#trabajos_03.png">
+                        <div class="modal fade" id="trabajos_03.png" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-transparent">
+                                <img src="images/trabajos/trabajos_03.png" alt="ingen" class="position-relative rounded-3">
+                                <button type="button" class="btn-close align-self-end p-2 position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            </div>
+                        </div>
+            </div>
+            <h3 class="text-montserrat white fw-bold text-center text-uppercase p-5 mb-0">confían en nosotros</h3>
+            <!-- CAROUSEL CLIENTES -->
+
+            <div class="w-100 ">
+                <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                  <div class="carousel-inner w-75 mx-auto">
+              
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                      <div class="row text-center justify-content-center g-3">
+                        <div class="col-6 col-sm-4 col-md-2"><img src="images/logos_clientes/arelauquen.png" class="img-fluid" alt="Logo 1"></div>
+                        <div class="col-6 col-sm-4 col-md-2"><img src="images/logos_clientes/pehuenes.png" class="img-fluid" alt="Logo 2"></div>
+                        <div class="col-6 col-sm-4 col-md-2"><img src="images/logos_clientes/sheraton.png" class="img-fluid" alt="Logo 3"></div>
+                        <div class="col-6 col-sm-4 col-md-2"><img src="images/logos_clientes/las_piedras.png" class="img-fluid" alt="Logo 4"></div>
+                        <div class="col-6 col-sm-4 col-md-2"><img src="images/logos_clientes/mizu.png" class="img-fluid" alt="Logo 5"></div>
+                        <div class="col-6 col-sm-4 col-md-2"><img src="images/logos_clientes/rodeo_ski.png" class="img-fluid" alt="Logo 6"></div>
+                      </div>
+                    </div>
+              
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                      <div class="row text-center justify-content-center g-3">
+                        <div class="col-6 col-sm-4 col-md-2"><img src="images/logos_clientes/escape_games.png" class="img-fluid" alt="Logo 7"></div>
+                        <div class="col-6 col-sm-4 col-md-2"><img src="images/logos_clientes/ausonia.png" class="img-fluid" alt="Logo 8"></div>
+                        <div class="col-6 col-sm-4 col-md-2"><img src="images/logos_clientes/nh.png" class="img-fluid" alt="Logo 9"></div>
+                        <div class="col-6 col-sm-4 col-md-2"><img src="images/logos_clientes/lavadero_bariloche.png" class="img-fluid" alt="Logo 10"></div>
+                        <div class="col-6 col-sm-4 col-md-2"><img src="images/logos_clientes/bariloche_suites.png" class="img-fluid" alt="Logo 1"></div>
+                        <div class="col-6 col-sm-4 col-md-2"><img src="images/logos_clientes/el_reino.png" class="img-fluid" alt="Logo 2"></div>
+                      </div>
+                    </div>
+              
+                  </div>
+              
+                  <!-- Controles -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>  
+                                               
+        </section>
+
         <!-- FOOTER -->
         
     </main>

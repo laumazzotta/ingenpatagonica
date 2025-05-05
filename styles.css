@@ -60,6 +60,10 @@ h2 {
   width: 100px !important;
 }
 
+.w-90 {
+  width: 90%;
+}
+
 html body {
   height: 100%;
   overflow-x: hidden;
@@ -79,30 +83,54 @@ a {
 .btn-primary {
   font-family: "Montserrat", sans-serif;
   color: white;
-  background-image: linear-gradient(131deg, #06C7F2 0%, #023D75 100%);
-  transition: all 0.5s;
+  background: linear-gradient(to right, #06C7F2, #011640);
+  transition: all 0.3s ease;
   font-size: 1.5rem;
   letter-spacing: 1px;
   padding: 1rem;
   border-radius: 0;
-  box-shadow: none;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  display: block;
+  bottom: 0;
+  left: 0;
+}
+
+.btn-primary a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  opacity: 0;
+  transform: translate(-100%);
+  transition: all 0.3s ease-in-out 0s;
+  filter: blur(0px);
 }
 
 .btn-primary:hover {
-  color: white;
-  transition: all 0.5s;
-  box-shadow: inset 0rem 0rem 1.2rem 5px rgba(0, 0, 0, 0.25) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2666666667);
+  box-shadow: 0 7px 20px 0px rgba(0, 0, 0, 0.7);
+  transform: scale(1.015);
+  transition: all 0.3s ease;
+}
+.btn-primary:hover.btn-primary a:before {
+  transform: translate(0);
+  opacity: 1;
 }
 
 .btn-primary:active {
   color: white;
-  background-image: none;
-  background-color: #011640;
+  background: linear-gradient(to right, #06C7F2, #011640);
 }
 
 .btn-primary:focus {
   color: white;
-  background-color: #06C7F2;
+  background: linear-gradient(to right, #06C7F2, #011640);
 }
 
 #closeNav,
@@ -153,7 +181,7 @@ a {
   left: 0;
   background-color: black;
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .overlay-content > a {
@@ -197,9 +225,8 @@ a {
 }
 
 .hero-background {
-  background-image: url(images/hero_background.png);
-  height: 100vh;
-  background-attachment: fixed;
+  background-image: url(images/hero_about_background.png);
+  height: 160vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -211,6 +238,11 @@ a {
   letter-spacing: 2px;
   line-height: 67px;
   font-size: 4.5rem;
+}
+
+#about {
+  position: absolute;
+  top: 90%;
 }
 
 .main-logo-letters {
@@ -245,7 +277,6 @@ a {
 
 .about-container-1 {
   padding: 7rem 5rem;
-  border-right: 10px solid;
   -o-border-image: linear-gradient(to bottom, #011640, #06C7F2) 1 100%;
      border-image: linear-gradient(to bottom, #011640, #06C7F2) 1 100%;
 }
@@ -274,20 +305,75 @@ a {
   letter-spacing: 2px;
 }
 
+#servicios, #trabajos {
+  padding: 5rem 3rem;
+}
+
 .cards-servicios {
   justify-items: center;
 }
 
 .card {
   border-radius: 10px !important;
-  transition: all 0.5s;
+  transition: all 0.3s;
+  border: none;
 }
 
 .card:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2) !important;
-  transition: all 0.5s;
+  transform: scale(1.03);
+  transition: all 0.3s;
 }
 
+.trabajos-section {
+  background: linear-gradient(140deg, black 0%, #023D75 100%);
+}
+
+.grid-container {
+  -moz-column-count: 4;
+       column-count: 4;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 10px;
+}
+
+.grid-image {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: block;
+}
+
+.grid-image:hover {
+  transform: scale(1.03);
+}
+
+.carousel-item img {
+  max-height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: filter 0.3s;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .hero-background {
+    background-image: url(images/hero_background_mobile_3.png);
+    height: 110vh;
+  }
+  #about {
+    position: relative;
+    top: 0%;
+  }
+  .about-container-1 {
+    padding: 3rem 3rem;
+  }
+  .grid-container {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+}
 @media screen and (max-width: 767.99px) {
   .w-xs-90 {
     width: 90% !important;
@@ -347,10 +433,6 @@ a {
   .hero-background {
     background-image: url(images/hero_background_mobile_3.png);
     height: 100vh;
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: auto;
   }
   .hero-title {
     font-variant: small-caps;
@@ -358,11 +440,15 @@ a {
     line-height: 30px;
     font-size: 2rem;
   }
+  #about {
+    position: relative;
+    top: 0%;
+  }
   .about-container-1 {
-    padding: 7rem 3rem;
-    -o-border-image: none;
-       border-image: none;
-    border-right: none;
-    border-width: 0;
+    padding: 3rem 3rem;
+  }
+  .grid-container {
+    -moz-column-count: 2;
+         column-count: 2;
   }
 }/*# sourceMappingURL=styles.css.map */
