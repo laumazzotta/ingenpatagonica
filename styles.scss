@@ -99,7 +99,8 @@ a {
 }
 
 .datos-contacto-navbar > div > a:hover,
-.datos-footer-overlay > div > a:hover {
+.datos-footer-overlay > div > a:hover,
+.textos-footer:hover {
   color: white;
   transition: all .25s linear;
 }
@@ -169,8 +170,10 @@ a {
 .datos-contacto-navbar > div > a, 
 .datos-footer-overlay, 
 .datos-footer-overlay > div > a, 
-.datos-footer-overlay > p {
+.datos-footer-overlay > p,
+.textos-footer {
   color: #ABB7BB;
+  transition: all .25s linear;
 }
 
 .datos-footer-overlay > div > img {
@@ -337,7 +340,7 @@ a {
   letter-spacing: 2px;
 }
 
-#servicios, #trabajos, #novedades {
+#servicios, #trabajos, #novedades, #contacto {
   padding: 5rem 3rem;
 }
 
@@ -394,8 +397,33 @@ a {
 }
 
 
-// ******* END CARRUSEL CLIENTES
+input, textarea {
+  border: none !important;
+  box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.15);
+  padding: 1rem !important;
+}
 
+.footer {
+  background-image: url(images/footer_background.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+.links-footer {
+  color: $paleta1;
+  transition: all .25s linear;
+}
+.links-footer:hover {
+  color: $paleta2;
+  transition: all .25s linear;
+}
+
+.copyright {
+  bottom: 5%;
+  color: gray;
+}
 
 //************ TABLET
 
@@ -525,7 +553,7 @@ a {
       column-count: 2;
     }
 
-    #servicios, #trabajos, #novedades {
+    #servicios, #trabajos, #novedades, #contacto {
       padding: 5rem 1rem;
     }
 
