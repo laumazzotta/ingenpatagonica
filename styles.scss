@@ -260,6 +260,15 @@ a {
   background-color: #000000;
 }
 
+.hero-background-legal {
+  background-image: url(images/header_background_legal_sm.png);
+  height: 85vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
 .hero-title {
   font-variant: small-caps;
   letter-spacing: 2px;
@@ -425,6 +434,10 @@ input, textarea {
   color: gray;
 }
 
+form > div {
+  width: 75%;
+}
+
 //************ TABLET
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -543,10 +556,7 @@ input, textarea {
       top: 0%;
     }
     .about-container-1 {
-      padding: 3rem 3rem;
-      // border-image: none;
-      // border-right: none;
-      // border-width: 0;
+      padding: 3rem 1rem;
     }
 
     .grid-container {
@@ -556,6 +566,15 @@ input, textarea {
     #servicios, #trabajos, #novedades, #contacto {
       padding: 5rem 1rem;
     }
+
+    form > div {
+      width: 90%;
+    }
+
+    .hero-background-legal {
+       height: 50vh;
+      
+      }
 
 }
 
