@@ -34,18 +34,18 @@ $('.nav-link').on('click', function() {
 });
 
 
-gsap.registerPlugin(ScrollTrigger) 
+// gsap.registerPlugin(ScrollTrigger) 
 
-gsap.to('.imagen-mision-vision', {
-    scrollTrigger: {
-        trigger: '.imagen-mision-vision',
-        // start:  "top ",
-        scrub: true
-    },
-    x: "0",
-    duration: 1,
-    // ease: "power3.in"
-});
+// gsap.to('.imagen-mision-vision', {
+//     scrollTrigger: {
+//         trigger: '.imagen-mision-vision',
+//         // start:  "top ",
+//         scrub: true
+//     },
+//     x: "0",
+//     duration: 1,
+//     // ease: "power3.in"
+// });
 
 var $plusButton = $('.plus-button'); 
 
