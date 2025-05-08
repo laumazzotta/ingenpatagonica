@@ -372,7 +372,7 @@ a {
 .imagen-mision-vision {
   margin-top: -6rem;
   box-shadow: 0 -0.5rem 2rem rgba(0, 0, 0, 0.4);
-  transform: translateX(-600px);
+  
   }
 
 @keyframes imagenMisionVision {
@@ -585,7 +585,7 @@ form > div {
     .hero-background {
       background-image: url(images/hero_background_mobile_3.png);
       height: 100vh;
-      background-attachment: fixed;
+      // background-attachment: fixed;
     }
     
     .hero-title {
