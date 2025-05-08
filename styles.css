@@ -545,7 +545,8 @@ form > div {
     width: 90%;
   }
   .hero-background-legal {
-    height: 60vh;
+    background-image: url(images/hero_background_legal_mobile.png);
+    height: 100vh;
   }
   .btn-primary {
     font-size: 1rem;
