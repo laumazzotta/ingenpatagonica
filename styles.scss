@@ -110,10 +110,10 @@ a {
     color: white;
     background: linear-gradient(to right, $primary, $paleta3);
     transition: all .3s ease;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
     padding: 1rem;
-    border-radius: 0;
+    border-radius: 20px;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);   
     width: fit-content;
     position: relative;
@@ -134,6 +134,7 @@ a {
   transform: translate(-100%);
   transition: all 0.3s ease-in-out 0s;
   filter: blur(0px);
+  border-radius: 20px;
 }
 
 .btn-primary:hover{
@@ -307,21 +308,35 @@ a {
     }
   }
 
+
 .about-title {
   color: $primary;
+  // position: absolute;
+  // left: -50%;
+  // top: 15%;
+  transform: translateX(-100%);
+  animation: aboutTitle .5s ease forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -2s);
 }
+
+@keyframes aboutTitle {
+  to {
+    transform: translateX(0%);
+}}
 
 .about-container-1 {
   padding: 7rem 5rem;
-  // border-right: 10px solid;
-  // border-width: 10px !important;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      $paleta3,
-      $primary 
-      ) 1 100%;
+  opacity: 0;
+  animation: aboutContainer .8s ease forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
 }
+
+@keyframes aboutContainer {
+  to {
+      opacity: 1;
+}}
 
 .border-gradient {
   border: 10px solid;
@@ -331,6 +346,24 @@ a {
     linear-gradient(120deg, $paleta3, $primary, );
 }
 
+.why-item {
+  transform: scale(.1);
+  opacity: 0;
+  animation: whyItems .5s ease forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -.5s);
+}
+
+@keyframes whyItems {
+  to {
+    transform: scale(1);
+    opacity: 1;
+}}
+
+.why-item-path {
+  fill: url(#paint0_linear_136_66);
+  transition: all .25s ease;
+}
 
 #mision-vision {
   margin-top: 5rem;
@@ -339,7 +372,13 @@ a {
 .imagen-mision-vision {
   margin-top: -6rem;
   box-shadow: 0 -0.5rem 2rem rgba(0, 0, 0, 0.4);
-}
+  transform: translateX(-600px);
+  }
+
+@keyframes imagenMisionVision {
+  to {
+    transform: translateX(0%);
+}}
 
 .titulos-mision-vision {
   background-image: linear-gradient(90deg, #06C7F2 0%, #023D75 100%);
@@ -438,12 +477,16 @@ form > div {
   width: 75%;
 }
 
+
+
+
 //************ TABLET
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .hero-background {
     background-image: url(images/hero_background_mobile_3.png);
     height: 110vh;
+    background-attachment: fixed;
   }
 
   #about {
@@ -542,6 +585,7 @@ form > div {
     .hero-background {
       background-image: url(images/hero_background_mobile_3.png);
       height: 100vh;
+      background-attachment: fixed;
     }
     
     .hero-title {
@@ -559,7 +603,7 @@ form > div {
       padding: 3rem 1rem;
     }
 
-    .grid-container {
+     .grid-container {
       column-count: 2;
     }
 
@@ -574,6 +618,11 @@ form > div {
     .hero-background-legal {
        height: 60vh;
       
+      }
+
+      .btn-primary {
+        font-size: 1rem;
+        padding: .8rem;
       }
 
 }

@@ -36,12 +36,16 @@ $('.nav-link').on('click', function() {
 
 gsap.registerPlugin(ScrollTrigger) 
 
-// gsap.to('.box', {
-//     scrollTrigger: '.box', // start animation when ".box" enters the viewport
-//     rotation: 360,
-//     duration: 3
-
-// });
+gsap.to('.imagen-mision-vision', {
+    scrollTrigger: {
+        trigger: '.imagen-mision-vision',
+        // start:  "top ",
+        scrub: true
+    },
+    x: "0",
+    duration: 1,
+    // ease: "power3.in"
+});
 
 var $plusButton = $('.plus-button'); 
 

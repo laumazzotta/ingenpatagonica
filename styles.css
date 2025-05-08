@@ -86,10 +86,10 @@ a {
   color: white;
   background: linear-gradient(to right, #06C7F2, #011640);
   transition: all 0.3s ease;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: 1px;
   padding: 1rem;
-  border-radius: 0;
+  border-radius: 20px;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
   width: -moz-fit-content;
   width: fit-content;
@@ -111,6 +111,7 @@ a {
   transform: translate(-100%);
   transition: all 0.3s ease-in-out 0s;
   filter: blur(0px);
+  border-radius: 20px;
 }
 
 .btn-primary:hover {
@@ -285,18 +286,53 @@ a {
 }
 .about-title {
   color: #06C7F2;
+  transform: translateX(-100%);
+  animation: aboutTitle 0.5s ease forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -2s);
 }
 
+@keyframes aboutTitle {
+  to {
+    transform: translateX(0%);
+  }
+}
 .about-container-1 {
   padding: 7rem 5rem;
-  -o-border-image: linear-gradient(to bottom, #011640, #06C7F2) 1 100%;
-     border-image: linear-gradient(to bottom, #011640, #06C7F2) 1 100%;
+  opacity: 0;
+  animation: aboutContainer 0.8s ease forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
 }
 
+@keyframes aboutContainer {
+  to {
+    opacity: 1;
+  }
+}
 .border-gradient {
   border: 10px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(120deg, #011640, #06C7F2);
+}
+
+.why-item {
+  transform: scale(0.1);
+  opacity: 0;
+  animation: whyItems 0.5s ease forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -0.5s);
+}
+
+@keyframes whyItems {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.why-item-path {
+  fill: url(#paint0_linear_136_66);
+  transition: all 0.25s ease;
 }
 
 #mision-vision {
@@ -306,8 +342,14 @@ a {
 .imagen-mision-vision {
   margin-top: -6rem;
   box-shadow: 0 -0.5rem 2rem rgba(0, 0, 0, 0.4);
+  transform: translateX(-600px);
 }
 
+@keyframes imagenMisionVision {
+  to {
+    transform: translateX(0%);
+  }
+}
 .titulos-mision-vision {
   background-image: linear-gradient(90deg, #06C7F2 0%, #023D75 100%);
   -webkit-background-clip: text;
@@ -406,6 +448,7 @@ form > div {
   .hero-background {
     background-image: url(images/hero_background_mobile_3.png);
     height: 110vh;
+    background-attachment: fixed;
   }
   #about {
     position: relative;
@@ -478,6 +521,7 @@ form > div {
   .hero-background {
     background-image: url(images/hero_background_mobile_3.png);
     height: 100vh;
+    background-attachment: fixed;
   }
   .hero-title {
     font-variant: small-caps;
@@ -504,5 +548,9 @@ form > div {
   }
   .hero-background-legal {
     height: 60vh;
+  }
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.8rem;
   }
 }/*# sourceMappingURL=styles.css.map */
