@@ -342,11 +342,19 @@ a {
 .imagen-mision-vision {
   margin-top: -6rem;
   box-shadow: 0 -0.5rem 2rem rgba(0, 0, 0, 0.4);
+  animation: imagenMisionVision 1s cubic-bezier(0.4, 0, 1, 1) forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -0.8s);
 }
 
 @keyframes imagenMisionVision {
-  to {
-    transform: translateX(0%);
+  0% {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
   }
 }
 .titulos-mision-vision {
@@ -533,6 +541,12 @@ form > div {
   }
   .about-container-1 {
     padding: 3rem 1rem;
+  }
+  .about-title {
+    animation-delay: calc(var(--scroll) * -0.9s);
+  }
+  .imagen-mision-vision {
+    animation-delay: calc(var(--scroll) * -0.35s);
   }
   .grid-container {
     -moz-column-count: 2;
