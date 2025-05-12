@@ -23,11 +23,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Reply-To: $email\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
 
-// Enviar el correo
-if (mail($destino, $asunto, $contenido, $headers)) {
-    http_response_code(200); // Respuesta correcta
-} else {
-    http_response_code(500); // Error en el servidor
-}
+    // Enviar el correo
+    if (mail($destino, $asunto, $contenido, $headers)) {
+        echo "<script>alert('¡Mensaje enviado exitosamente!'); window.location.href='index.html';</script>";
+    } else {
+        echo "<script>alert('Hubo un error al enviar el mensaje.'); window.location.href='index.html';</script>";
+    }
 }
 ?>
