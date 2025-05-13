@@ -1,5 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    error_log(print_r($_POST, true));
+    error_log(print_r($_SERVER, true));
+    
     // Recogemos los datos del formulario
     $nombre   = $_POST['nombre'];
     $telefono = $_POST['telefono'];
