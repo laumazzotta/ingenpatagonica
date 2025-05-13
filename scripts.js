@@ -30,11 +30,11 @@ var $plusButton = $('.plus-button');
 
 
     const form = document.getElementById('contactForm');
-    const loader = document.getElementById('loader');
+    // const loader = document.getElementById('loader');
   
     form.addEventListener('submit', function(e) {
       e.preventDefault(); // Evita el refresh de la página
-      loader.style.display = 'block';
+    //   loader.style.display = 'block';
   
       // Capturar datos del formulario
       const formData = new FormData(form);
@@ -46,12 +46,12 @@ var $plusButton = $('.plus-button');
       })
       .then(response => response.text())
       .then(data => {
-        loader.style.display = 'none';
+        // loader.style.display = 'none';
         alert("¡Mensaje enviado exitosamente!");
         form.reset(); // Limpia el formulario
       })
       .catch(error => {
-        loader.style.display = 'none';
+        // loader.style.display = 'none';
         alert("Hubo un error al enviar el mensaje. Intenta de nuevo.");
         console.error("Error:", error);
       });
