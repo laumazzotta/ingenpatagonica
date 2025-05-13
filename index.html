@@ -508,19 +508,19 @@
             <form id="contactForm" name="contact" action="send_mail.php"  method="POST">
                 <div class="row g-3 mx-auto my-5">
                   <div class="col-12 col-md-6">
-                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
                   </div>
                   <div class="col-12 col-md-6">
-                    <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono">
                   </div>
                   <div class="col-12 col-md-6">
-                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                   </div>
                   <div class="col-12 col-md-6">
-                    <input type="text" class="form-control" id="empresa" placeholder="Empresa (opcional)">
+                    <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Empresa (opcional)">
                   </div>
                   <div class="col-12">
-                    <textarea class="form-control" id="mensaje" rows="5" required placeholder="¿Cómo podemos ayudarte?"></textarea>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required placeholder="¿Cómo podemos ayudarte?"></textarea>
                   </div>
                   <div class="col-12">
                     <button type="submit" class="box btn btn-primary fw-semibold border-0 mx-auto px-4">Enviar</button>
