@@ -16,11 +16,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $asunto = "Nuevo mensaje de contacto de $nombre";
 
     // Cuerpo del mensaje
-    $contenido = "Nombre: $nombre\n";
-    $contenido .= "Teléfono: $telefono\n";
-    $contenido .= "Email: $email\n";
-    $contenido .= "Empresa: $empresa\n";
-    $contenido .= "Mensaje:\n$mensaje\n";
+    $contenido = "Nombre: $nombre\r\n";
+    $contenido .= "Teléfono: $telefono\r\n";
+    $contenido .= "Email: $email\r\n";
+    $contenido .= "Empresa: $empresa\r\n";
+    $contenido .= "Mensaje:\r\n$mensaje\r\n";
 
     // Encabezados (para evitar que llegue a spam)
     $headers = "From: $email\r\n";
